@@ -1,0 +1,28 @@
+html {
+  font-family: "Dancing Script", cursive;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  height: 75px;
+  background-color: brown;
+  display: flex;
+  padding: 20px 30px;
+}
+h1 {
+  background-color: red;
+}
+nav > ul {
+  display: flex;
+  width: 390px;
+  justify-content: space-around;
+  background-color: blue;
+  /* margin-left: ;で余白を開ける */
+  margin-left: 150px;
+  font-size: 18px;
+  font-weight: 500;
+}
+a{
+  text-decoration:solid;
+}
