@@ -11,13 +11,43 @@ p{
 h1,h2{
   font-weight: bold;
 }
+.container{
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.title{
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.title::after{
+  content: ' ';
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: #707070;
+  bottom: 0;
+  left: 0;
+}
+.title .en{
+  font-size: 30px;
+}
+.title .ja{
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 20px;
+  line-height: 19px;
+}
 /* header */
 header{
   height: 75px;
   background-color: #fff;
   display: flex;
+  align-items: center;
   gap: 0 80px;
   padding: 0 40px;
+
 }
 header h1{
   font-size: 35px;
@@ -33,4 +63,37 @@ header h1{
   background-image: url(../img/kv.png);
   background-repeat: no-repeat;
   background-size:  cover;
+  position: absolute;
+  margin-bottom: 120px;
+}
+.kv-content{
+  width: 388px;
+  padding: 20px;
+  background-color: rgba(0,0,0, .57);
+  color: #fff;
+  bottom: 40px;
+  right: 40px;
+  
+}
+.kv-content strong{
+  font-size: 20px;
+}
+.kv-content p{
+  padding-top: 20px;
+}
+/* news */
+.news-list{
+  display: flex;
+}
+.news-content{
+  width: calc(100% / 3);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.news-list div:first-of-type{
+  padding-left: 0;
+}
+
+.news-list div:last-of-type{
+  padding-right: 0;
 }
