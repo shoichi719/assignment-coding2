@@ -22,7 +22,7 @@ h1,h2{
   position: relative;
 }
 .title::after{
-  content: ' ';
+  content:'';
   position: absolute;
   width: 40px;
   height: 1px;
@@ -63,7 +63,7 @@ header h1{
   background-image: url(../img/kv.png);
   background-repeat: no-repeat;
   background-size:  cover;
-  position: absolute;
+  position: relative;
   margin-bottom: 120px;
 }
 .kv-content{
@@ -73,7 +73,6 @@ header h1{
   color: #fff;
   bottom: 40px;
   right: 40px;
-  
 }
 .kv-content strong{
   font-size: 20px;
@@ -82,6 +81,9 @@ header h1{
   padding-top: 20px;
 }
 /* news */
+.news{
+  margin-bottom: 120px;
+}
 .news-list{
   display: flex;
 }
@@ -90,10 +92,54 @@ header h1{
   padding-left: 40px;
   padding-right: 40px;
 }
-.news-list div:first-of-type{
+.news-list  div:first-of-type{
   padding-left: 0;
+  border-right: solid 1px #707070;
 }
-
-.news-list div:last-of-type{
+.news-list > div:last-of-type{
   padding-right: 0;
+  border-right: solid 1px #707070;
+}
+.data{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.data span:first-of-type{
+  padding-right: 16px;
+}
+data span:last-of-type{
+  background-color: #333333;
+  color: #fff;
+  padding: 0 5px;
+}
+/* about */
+.about{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.about .content{
+  width: 40%;
+}
+.about > p{
+ width: 55%;
+}
+.about > img{
+  width: 100%;
+}
+/* studio */
+.studio{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  flex-direction: row-reverse;
+}
+.studio .content{
+  width: 40%;
+}
+.studio > p{
+  width: 55%;
+}
+.studio > p img{
+  width: 100%;
 }
