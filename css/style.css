@@ -2,6 +2,7 @@ body{
   font-family: 'Dancing Script', cursive;
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f0f0f0;
 }
 p{
   font-size: 16px;
@@ -142,4 +143,83 @@ data span:last-of-type{
 }
 .studio > p img{
   width: 100%;
+}
+/* company */
+.company{
+  position: relative;
+  margin-bottom: 120px;
+}
+.company ,content{
+  width: 55%;
+  padding: 100px 8% 100px 6%;
+  background-color: #fff;
+}
+.company > p{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.company > p img{
+  width: 100%;
+}
+/* footer */
+footer{
+  height: 100px;
+  background-color: #fff;
+}
+footer small{
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/* responsive */
+@media screen and (max-width: 900px){
+  /* heder */
+  header{
+    height: 80px;
+    padding: 0 20px;
+    gap: 0;
+    flex-wrap: wrap;
+    align-items: unset;
+  }
+  header nav{
+    width: 100%;
+  }
+  /* kv */
+  .kv{
+    height: calc(100vh - 80px);
+    background-position: center;
+    margin-bottom: 80px;
+  }
+  .kv-content{
+    width: calc(100% - 40px);
+    right: 50%;
+    transform: translate(50%);
+  }
+  /* news */
+  .news{
+    margin-bottom: 80px;
+  }
+  .news-list{
+    flex-wrap: wrap;
+    gap: 40px 0;
+  }
+  .news-content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .news-list > div:first-of-type{
+    border-right: transparent;
+  }
+  .news-list > div:last-of-type{
+    border-left: transparent;
+  }
+  /* about */
+  
+
 }
